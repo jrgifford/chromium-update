@@ -106,5 +106,7 @@ Exec=/usr/lib/chromium/chrome %U
 Terminal=false
 Icon=/usr/lib/chromium/chromium-browser.png
 Type=Application
+StartupWMClass=Chromium-browser
+StartupNotify=true
 Categories=GTK;Network;WebBrowser;
 MimeType=text/html;text/xml;application/xhtml+xml;text/mml;x-scheme-handler/http;x-scheme-handler/https;
