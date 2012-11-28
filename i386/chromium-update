@@ -3,6 +3,12 @@ echo "*** Update script for Chromium nightly builds ***"
 echo "*** Written by: loganfynne ***"
 mkdir /tmp/chromium-nightly
 cd /tmp/chromium-nightly
+rm -rf /usr/lib/chromium/
+mkdir /usr/lib/chromium/
+wget https://raw.github.com/jrgifford/chromium-update/master/chromium.desktop
+mv /tmp/chromium-nightly/chromium.desktop /usr/share/applications/chromium-nightly.desktop
+wget https://raw.github.com/jrgifford/chromium-update/master/chromium-browser.png
+mv /tmp/chromium-nightly/chromium-browser.png /usr/lib/chromium/chromium-browser.png
 wget http://commondatastorage.googleapis.com/chromium-browser-snapshots/Linux/LAST_CHANGE
 NEW="`cat LAST_CHANGE`"
 wget http://commondatastorage.googleapis.com/chromium-browser-snapshots/Linux/$NEW/chrome-linux.zip

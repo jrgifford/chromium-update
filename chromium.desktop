@@ -1,6 +1,6 @@
 [Desktop Entry]
 Version=1.0
-Name=Chromium
+Name=Chromium Nightly Builds
 # Only KDE 4 seems to use GenericName, so we reuse the KDE strings.
 # From Ubuntu's language-pack-kde-XX-base packages, version 9.04-20090413.
 GenericName=Web Browser
@@ -102,9 +102,9 @@ Comment[th]=เข้าถึงอินเทอร์เน็ต
 Comment[tr]=İnternet'e erişin
 Comment[uk]=Доступ до Інтернету
 Comment[vi]=Truy cập Internet
-Exec=chromium %U
+Exec=/usr/lib/chromium/chrome %U
 Terminal=false
-Icon=chromium
+Icon=/usr/lib/chromium/chromium-browser.png
 Type=Application
 Categories=GTK;Network;WebBrowser;
 MimeType=text/html;text/xml;application/xhtml+xml;text/mml;x-scheme-handler/http;x-scheme-handler/https;
