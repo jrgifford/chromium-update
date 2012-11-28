@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "*** Update script for Chromium nightly builds ***"
+echo "*** Written by: loganfynne ***"
+mkdir /tmp/chromium-nightly
+cd /tmp/chromium-nightly
+wget http://commondatastorage.googleapis.com/chromium-browser-snapshots/Linux/LAST_CHANGE
+NEW="`cat LAST_CHANGE`"
+wget http://commondatastorage.googleapis.com/chromium-browser-snapshots/Linux/$NEW/chrome-linux.zip
+unzip -q -o -d /tmp/chromium-nightly/ chrome-linux.zip
+mv /tmp/chromium-nightly/chrome-linux/* /usr/lib/chromium/
+chmod 644 /usr/lib/chromium/*
+chmod 755 /usr/lib/chromium/locales
+chmod 644 /usr/lib/chromium/locales/*
+chmod +x /usr/lib/chromium/chrome
+rm -r /tmp/chromium-nightly/*
