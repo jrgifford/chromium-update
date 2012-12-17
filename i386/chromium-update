@@ -8,6 +8,8 @@ mkdir /usr/lib/chromium/
 wget https://raw.github.com/jrgifford/chromium-update/master/chromium.desktop
 mv /tmp/chromium-nightly/chromium.desktop /usr/share/applications/chromium-nightly.desktop
 wget https://raw.github.com/jrgifford/chromium-update/master/chromium-browser.png
+wget https://raw.github.com/jrgifford/chromium-update/master/chromium
+mv /tmp/chromium-nightly/chromium /usr/lib/chromium/chromium
 mv /tmp/chromium-nightly/chromium-browser.png /usr/lib/chromium/chromium-browser.png
 wget http://commondatastorage.googleapis.com/chromium-browser-snapshots/Linux/LAST_CHANGE
 NEW="`cat LAST_CHANGE`"
