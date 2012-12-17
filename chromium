@@ -1,4 +1,5 @@
 #!/bin/sh
 export CHROME_WRAPPER=/usr/lib/chromium/chromium
 export CHROME_DESKTOP=chromium.desktop
+export CHROME_LOCALES=/usr/lib/chromium/locales
 exec /usr/lib/chromium/chrome "$@" --enable-seccomp-sandbox
