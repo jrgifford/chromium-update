@@ -20,4 +20,5 @@ chmod 644 /usr/lib/chromium/*
 chmod 755 /usr/lib/chromium/locales
 chmod 644 /usr/lib/chromium/locales/*
 chmod +x /usr/lib/chromium/chrome
+chmod +x /usr/lib/chromium/chromium
 rm -r /tmp/chromium-nightly/*
