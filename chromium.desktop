@@ -2,7 +2,7 @@
 Version=1.0
 Name=Chromium Nightly Builds
 GenericName=Web Browser
-Exec=/usr/lib/chromium/chromium
+Exec=/usr/lib/chromium/chrome %U
 Terminal=false
 Type=Application
 Icon=chromium-browser
